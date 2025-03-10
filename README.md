@@ -7,5 +7,5 @@ Ce repository contient les formules Homebrew pour installer les outils CLI déve
 Ajoutez ce tap à Homebrew :
 
 ```sh
-brew tap OPT-NC/homebrew-tap
+brew tap opt-nc/homebrew-tap
 ```
