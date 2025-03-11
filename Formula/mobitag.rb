@@ -5,21 +5,21 @@
 class Mobitag < Formula
   desc "mobitag-cli, le chemin le plus court entre le terminal et le sms."
   homepage "https://github.com/opt-nc/mobitag-cli"
-  version "0.6.0-develop.3"
+  version "0.6.0"
   license "GPL-3.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/opt-nc/mobitag-cli/releases/download/v0.6.0-develop.3/mobitag_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
-      sha256 "55063c8983c303c4434a19bf99f4ef2f25d80c732d8136a127b260a013d29e59"
+      url "https://github.com/opt-nc/mobitag-cli/releases/download/v0.6.0/mobitag_Darwin_x86_64.tar.gz", using: CurlDownloadStrategy
+      sha256 "f70d75b488b2d5518e5e2d4637840545a14b14145722b66c2e359bbdbc00758e"
 
       def install
         bin.install "mobitag"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/opt-nc/mobitag-cli/releases/download/v0.6.0-develop.3/mobitag_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "61c10a3aa18d450cb40ddb6872c6ab4512e96be84a3d0423eb29d43070ea368b"
+      url "https://github.com/opt-nc/mobitag-cli/releases/download/v0.6.0/mobitag_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "9511514405321c8ab4825913fa31ab3d110c0cbfdfa19f2b3a30ea6ecc38fa9f"
 
       def install
         bin.install "mobitag"
@@ -30,8 +30,8 @@ class Mobitag < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/opt-nc/mobitag-cli/releases/download/v0.6.0-develop.3/mobitag_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
-        sha256 "c4f316ed5c914ec01d12080fb110e8d7564a746a5ccfcfea1b214bf3680505ef"
+        url "https://github.com/opt-nc/mobitag-cli/releases/download/v0.6.0/mobitag_Linux_x86_64.tar.gz", using: CurlDownloadStrategy
+        sha256 "922944fd8e2529b6033e52692cf58d9d79408ce04ebf0e70fee8aeb9555ba906"
 
         def install
           bin.install "mobitag"
@@ -40,8 +40,8 @@ class Mobitag < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/opt-nc/mobitag-cli/releases/download/v0.6.0-develop.3/mobitag_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-        sha256 "a2069d45ca4b7d21c5e77604595562a024cd9ea125b236dd6b5f59f9733a6e7a"
+        url "https://github.com/opt-nc/mobitag-cli/releases/download/v0.6.0/mobitag_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+        sha256 "53005a516d3e52b02c695631393c709f392df80a208ee6109f540825b9f77a44"
 
         def install
           bin.install "mobitag"
