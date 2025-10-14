@@ -3,7 +3,7 @@ cask "geol" do
   name "geol"
   desc "geol, the cli to efficiently display product end-of-life dates in your terminal using the endoflife.date API."
   homepage "https://github.com/opt-nc/geol"
-  version "1.0.0"
+  version "1.1.0"
 
   livecheck do
     skip "Auto-generated on release."
@@ -19,12 +19,12 @@ cask "geol" do
     on_intel do
       url "https://github.com/opt-nc/geol/releases/download/v#{version}/geol_Darwin_x86_64.tar.gz",
         using: :homebrew_curl
-      sha256 "ee20cdad79c50e926981dce27fcf5c8af54eb00680291c804fb3c2f940aa4614"
+      sha256 "f9e7920393adf62a8d860bfa587e2fc239db4d424369b43a7c04264c1e14713e"
     end
     on_arm do
       url "https://github.com/opt-nc/geol/releases/download/v#{version}/geol_Darwin_arm64.tar.gz",
         using: :homebrew_curl
-      sha256 "2c6246a3349ff904c1c3fcbc01aa9745e478487f1c811e141b24bd9ab1cfc152"
+      sha256 "aa99446dc6024a31c8206f42d8a6049dcd36a6d7743b749c155358e8d0761410"
     end
   end
 
@@ -32,12 +32,12 @@ cask "geol" do
     on_intel do
       url "https://github.com/opt-nc/geol/releases/download/v#{version}/geol_Linux_x86_64.tar.gz",
         using: :homebrew_curl
-      sha256 "281a694790fd54893ec47993b861580cff076a98961cbf4662b7aa87e2c0ed8a"
+      sha256 "272439be9793da714963a8fd92a6602375c21f6b6a406d75d584ebcd2bcd272d"
     end
     on_arm do
       url "https://github.com/opt-nc/geol/releases/download/v#{version}/geol_Linux_arm64.tar.gz",
         using: :homebrew_curl
-      sha256 "ee54b4d011cc49d6cf33d9772c0c4566625e3bc58a966cfe7cc82ca9d401c91c"
+      sha256 "9d321a79236d666a13411f62efddecd17bbf5f9e8f57186e781519918b635434"
     end
   end
 
